@@ -1,0 +1,78 @@
+.fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(41, 9, 96);
+}
+
+canvas{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  top: 4%;
+  left: 20%;
+  filter: drop-shadow(10px 10px 4px #FC6F09);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+}
+
+body > div.displayParent > div{
+  font-family: "Fugaz One", sans-serif;
+  display: inline-block;
+  position: absolute;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  color: #80DBE0;
+}
+
+body > div.displayParent{
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 24%;
+  width: 35%;
+  height: 50%;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+}
+
+/* custom scrollbar from: https://www.cssportal.com/css-scrollbar-generator/*/
+
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #A63030;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #B84269;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #B84269;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #52C09F;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #80DBE0;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #80DBE0;
+}
